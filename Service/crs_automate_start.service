@@ -1,0 +1,6 @@
+[Unit]
+Description=Start crs_automate.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl enable crs_automate.service ; /usr/bin/systemctl start crs_automate.service

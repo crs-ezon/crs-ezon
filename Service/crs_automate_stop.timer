@@ -1,0 +1,9 @@
+[Unit]
+Description=Stopping crs_automate.service at 04:30 PM daily
+
+[Timer]
+OnCalender=*-*-* 16:30:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

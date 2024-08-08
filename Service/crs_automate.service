@@ -1,0 +1,14 @@
+[Unit]
+Description=Execution of CRS module on boot
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Desktop/CRS/module.py
+User=pi
+Group=pi
+Restart=on-failure
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

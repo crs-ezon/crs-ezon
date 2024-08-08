@@ -1,0 +1,6 @@
+[Unit]
+Description=Stop crs_automate.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl stop crs_automate.service
